@@ -22,3 +22,8 @@ van-deli-order-analysis
 1. Ensure your system has MySQL and Python installed and configured. 
 2. Run 'webApp.py', which contains the main runnable. This will create the db connection, populate tables, analyze orders, and start the local web app.
 3. Go to http://localhost:5000/ on your local web page to view the results.
+
+## Expected Output
+When you reach the tables page, you should see the following output.
+![Q1](https://github.com/codingone21/van-deli-order-analysis/tree/main/img/q1.png)
+![Q2](https://github.com/codingone21/van-deli-order-analysis/tree/main/img/q2.png)
