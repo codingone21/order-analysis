@@ -25,5 +25,5 @@ van-deli-order-analysis
 
 ## Expected Output
 When you reach the tables page, you should see the following output.
-![Q1](https://github.com/codingone21/van-deli-order-analysis/tree/main/img/q1.png)
-![Q2](https://github.com/codingone21/van-deli-order-analysis/tree/main/img/q2.png)
+![Q1](https://github.com/codingone21/van-deli-order-analysis/tree/main/img/q1.png?raw=true)
+![Q2](https://github.com/codingone21/van-deli-order-analysis/tree/main/img/q2.png?raw=true)
