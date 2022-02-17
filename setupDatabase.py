@@ -118,10 +118,10 @@ def create_and_populate_tables(connection):
     _execute_query(connection, populate_menu)
     _execute_query(connection, populate_members)
     
-def create_solution_tables(connection):
+def create_solution_views(connection):
     """  Q1 - MOST PURCHASED """
     q1_most_purchased = """
-    CREATE TABLE IF NOT EXISTS q1 
+    CREATE OR REPLACE VIEW q1_most_purchased_view AS
         (SELECT s.product_id, product_name, COUNT(s.product_id) num_purchase
         FROM sales s LEFT JOIN menu m ON s.product_id = m.product_id
         GROUP BY s.product_id
@@ -133,7 +133,7 @@ def create_solution_tables(connection):
     
     """  Q2 - SALES VIEW """
     q2_sales_view = """
-    CREATE TABLE IF NOT EXISTS q2
+    CREATE OR REPLACE VIEW q2_sales_view AS
         (SELECT 
         	sales.customer_id, sales.order_date, menu.product_name, menu.price,
         	(CASE WHEN (members.join_date IS NULL OR members.join_date > sales.order_date) THEN 'N' ELSE 'Y' END) AS is_member,
