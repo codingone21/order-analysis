@@ -1,10 +1,10 @@
-# van-deli-order-analysis
+# Order Analysis
 
 ## Stack Overview
-Database: MySQL
-Web App Framework: Flask
-Languages: Python 3.8, Html/Css
-Python Packages: flask, flask_mysqldb, pandas
+- Database: MySQL
+- Web App Framework: Flask
+- Languages: Python 3.8, Html/Css
+- Python Packages: flask, flask_mysqldb, pandas
 
 ## Package Org
 ```
